@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 // import logo from './logo.svg';
-import logo from './todopostit.png';
+
 import './App.css';
+import LogoCode from './LogoCode.js';
 
 import AddToDo from "./AddTodo";
 import ListToDoV2 from './ListToDoV2.js';
@@ -94,8 +95,7 @@ class App extends Component {
         return (
             <div className="App">
                 <header className="App-header">
-                    <img src={logo} className="App-logo" alt="logo"/>
-                    <h1 className="App-title">{this.state.appTitle}</h1>
+                  <LogoCode/>
                 </header>
                 <div>
                     <AddToDo clicked={this.clickAdd}/>
